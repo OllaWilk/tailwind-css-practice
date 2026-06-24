@@ -7,6 +7,49 @@
     <title>email subscription</title>
   </head>
   <body>
-    hello
+    <!-- Background Container -->
+    <div class="flex items-center justify-center min-h-screen bg-[#FDF1F7]">
+      <!-- Card -->
+      <div class="flex bg-[#935CBA] p-2 mx-6 rounded-2xl p-3 shadow-lg">
+        <!-- Flex container -->
+        <div class="overflow-hidden flex items-center flex-col md:flex-row">
+          <!-- Image -->
+          <img
+            src="../assets/images/subscribe.jpg"
+            alt="woman with maceup"
+            class="object-cover rounded-xl h-80 w-full md:h-64 md:rounded-l-xl md:rounded-r-none transform"
+          />
+          <!-- Content -->
+          <div class="p-6 md:p-10">
+            <h2
+              class="font-serif text-2xl md:text-3xl font-semibold leading-snug text-xl font-medium text-center text-white md:text-left"
+            >
+              Get <span class="font-bold text-[#D9FB9C]">10% off</span> on your
+              first order
+            </h2>
+            <p
+              class="max-w-xs my-4 text-sm leading-6 tracking-wide text-center text-white md:text-left"
+            >
+              Bold color. Effortless beauty. Join and unlock your welcome
+              discount
+            </p>
+            <div
+              class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="w-full md:w-64 rounded-md border border-[#E8C7D7] bg-[#FFF9FC] px-4 py-3 text-sm text-[#5B3B4A] placeholder:text-[#B892A3] focus:outline-none focus:ring-1 focus:ring-[#D9FB9C]"
+              />
+              <button
+                class="px-5 py-3 text-xs rounded-md text-[#5B3142] bg-[#D9FB9C] hover:bg-[#BFC9B3] font-semibold transition duration-300"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
