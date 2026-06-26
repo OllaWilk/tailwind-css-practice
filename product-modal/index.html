@@ -4,9 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>email subscription</title>
+    <title>Product modal</title>
   </head>
   <body>
-    hello
+    <!-- Background Container -->
+    <div class="flex items-center justify-center min-h-screen bg-[#FDF1F7]">
+      <!-- Card -->
+      <div
+        class="relative m-2 lg:w-1/2 grid md:grid-cols-2 rounded-2xl shadow-lg overflow-hidden font-semibold shadow-md bg-white"
+      >
+        <!-- Image -->
+        <p
+          class="absolute z-50 bg-[#D9FB9C] py-2 px-3 top-4 left-4 text-xs rounded-2xl"
+        >
+          Free shipping
+        </p>
+        <img
+          src="../assets/images/kometyk.png"
+          alt="woman with maceup"
+          class="object-cover col-span-1 h-60 md:h-full w-full lg:rounded-l-xl rounded-b-none md:rounded-r-none transform"
+        />
+
+        <!-- Content -->
+        <div class="p-4 lg:w-full flex flex-col justify-center">
+          <div class="flex flex-col items-center">
+            <h2
+              class="font-serif text-2xl md:text-3xl leading-snug font-medium md:text-center"
+            >
+              Hydrating Recovery Face Cream
+            </h2>
+            <span class="text-xs text-[#5B3142]">Butter Cream</span>
+          </div>
+          <div class="flex flex-col items-center pt-5 px-5">
+            <p class="font-semibold text-sm line-through text-[#5B3142]">
+              $ 79
+            </p>
+            <p class="font-bold text-5xl">$ 29</p>
+            <p
+              class="max-w-xs my-4 text-xs leading-6 tracking-wide text-center md:text-left"
+            >
+              The offer is valid until April 3 or as long as stock lasts!
+            </p>
+          </div>
+          <!-- buttons -->
+          <div class="mt-5 space-y-4 md:space-y-0">
+            <button
+              class="w-full px-5 py-3 text-xs rounded-md text-white bg-[#935CBA] hover:bg-[#e8d0f0] hover:text-black font-semibold transition duration-300"
+            >
+              Add to cart
+            </button>
+            <div class="flex items-center gap-2 py-3">
+              <svg
+                width="8"
+                height="8"
+                viewBox="0 0 10 10"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#935CBA" />
+              </svg>
+              <p>50+ pcs. in stock.</p>
+            </div>
+            <div class="flex justify-between gap-4">
+              <button
+                class="w-full px-5 py-3 text-xs rounded-md text-[#5B3142] bg-[#D9FB9C] hover:bg-[#BFC9B3] font-semibold transition duration-300"
+              >
+                Add to cart
+              </button>
+              <button
+                class="w-full px-5 py-3 rounded-md text-[#5B3142] bg-[#D9FB9C] hover:bg-[#BFC9B3] font-semibold transition duration-300 text-xs"
+              >
+                Add to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
